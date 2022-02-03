@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+#works{
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns:repeat(auto-fit,200px);
+    justify-content: space-around;
+}
+
+#works a{
+    font-family: "Nico Moji";
+    display: inline-block;
+    width:200px;
+    height:200px;
+    font-size:3em;
+    color:rgb(150, 115, 247);
+    padding-top: 50px;
+    
+}
+#works a{
+    opacity: 0;
+    transition: all 0.2s;
+    transform: scale(1,1);
+}
+
+
+
+#works div:hover a{
+    opacity: 0.9;
+    box-shadow: 0.5px 16px rgb(204, 219, 235);
+   transform: scale(1.1,1.1);
+   background-color:rgb(211, 233, 253);
+   border-radius: 50%;
+}
+
+#works div:nth-child(1){
+    background-image: url("../images/Kadai9.png") ; 
+    background-size: cover;   
+}
+#works div:nth-child(2){
+    background-image: url("../images/Kadai10.png") ;    
+    background-size: cover;
+}
+#works div:nth-child(3){
+    background-image: url("../images/Kadai20.png") ; 
+    background-size: cover;   
+}
+#works div:nth-child(4){
+    background-image: url("../images/Kadai21.png") ;    
+    background-size: cover;
+}
+#works div:nth-child(5){
+    background-image: url("../images/Kadai22.png") ;    
+    background-size: cover;
+}
+
+/*Contact Me*/
+#contact form{
+    font-family: 'Caveat',cursive;
+    margin:0 1em 20px 2em;
+}
+#contact form input,#contact form textarea{
+    border:none;
+    border-bottom: solid 1px #AAA;
+}
+#contact #textarea{
+    position:relative;
+    margin-bottom: 3em;
+}
+#contact form textarea{
+    position:absolute;
+    top:20px;
+    left:6.5em;
+    border:solod 1px black;
+}
+#contact form div{
+    line-height: 2em;
+    padding:10px;
+}
+#contact form button{
+    border:solod #AAA;
+    border-radius: 10px;
+    width:5em;
+    display:block;
+    margin:auto;
+    height:2em;
+}
+/*フォームデータが妥当でない場合*/
+#contact form *:invalid{
+    border-color: palevioletred;
+}
+
+#about{
+    font-family: "Nico Moji";
+}
+#about p{
+    font-family: "Nico Moji";
+}
+

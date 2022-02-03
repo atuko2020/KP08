@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+body,div,h1,h2,ul,li,p{
+    margin:0;
+    padding:0;
+}
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: "Yusei Magic" serif;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+}
+
+#wrapper{
+    overflow: hidden;
+}
+
+h1{
+    font-size:2.5em;
+    font-weight:bold;
+}
+
+h2{
+    font-family: 'Caveat',cursive;
+    font-size:3em;
+    text-shadow:0 0.03em 0.03em #000000,
+                 0 0.03em 0.03em  #9c0fdd,
+                 0 0.03em 0.03em  rgb(18, 7, 168);
+}
+
+section{
+    margin-bottom: 60px;
+    background-color: #14125c; opacity: 0.8;
+}
+
+section p{
+    font-family: 'Caveat',cursive;
+    font-size: 0.875em;
+    margin:0 1em 20px 2em;
+}
+
+
+footer{
+    font-family: 'Caveat',cursive;
+    background-color:#5b3ddf ; opacity: 0.9;
+    color: #fff;
+    clear:both;
+    border-top:solid 10px  rgb(220, 220, 255); opacity: 0.9;
+    padding:10px 0 12px 0;
+    text-align: center;
+}
+footer p small{
+    font-family: 'Caveat',cursive;
+    font-size: 0.8em;
+}
+
+/*topへのリンク*/
+#page_top{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        background: #ef3f40;
+        opacity: 0.6;
+        border-radius: 50%;
+      }
+
+                 
+
+#page_top a{
+    display:block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+#page_top:hover{
+    opacity: 0.85;
+}
+#page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0d8';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  
+  
+
+
+
+

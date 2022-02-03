@@ -1,0 +1,136 @@
+@charset "UTF-8";
+.owner{
+    
+    width: calc(100%/3);
+    margin: auto;
+}
+dl>div{
+    display: flex;
+    justify-content: center;
+    
+}
+#owner dt::after{
+    content:":";
+    }
+
+
+body { 
+    background-repeat: repeat-y;
+    margin:0px;   
+}
+       
+#container{
+    width:100%;
+    text-align:center;
+    background-image: url("../images/bg.png") ;   
+}
+
+header {
+    font-family:"Yusei Magic", sans-serif;
+    height:300px;
+    background-color: rgb(150, 115, 247);
+    color: rgb(255, 255, 255);
+}
+
+
+dt{   
+    
+    text-align:center;
+}
+dd{
+    margin-left: 80px;
+}
+
+main{ 
+    width:80%;
+    margin:0 auto;
+    min-width:340px;
+    padding:1rem 0;
+    background-color: aliceblue;  
+}
+section {
+ width:90%;
+ margin:0 auto;
+ padding-bottom: 2rem;
+ overflow: hidden;
+}
+
+ section p { 
+    width:55%;
+    min-width:320px;
+    padding:0rem 1rem;
+    color:rgb(184, 79, 216);
+    text-align: justify;
+    
+    
+}
+main section:nth-child(1) p{
+float:left;
+}
+main section:nth-child(2) p{
+    width:90%
+}
+main section:nth-child(3) p{
+    float:right;
+    }
+main section:nth-child(1) img{
+    width:35%;
+    min-width: 200px;
+  float: right;
+  padding-right:1rem;
+}
+
+main section:nth-child(3) img{
+    width:35%;
+    min-width: 200px;
+  float: left;
+  
+}
+
+h1 {
+    font-family:"Yusei Magic", sans-serif;
+   margin:0px;
+   padding:1rem 1rem 0rem 1rem;
+}
+
+
+h2 {
+    
+    font-family:"Yusei Magic", sans-serif;
+    color: rgb(150, 115, 247);
+    padding:0.5rem 0.5rem 0rem 0.5rem;
+    border-left: 10px groove rgb(194, 84, 228);
+    border-bottom: 1px solid rgb(194, 84, 228);
+}
+
+
+footer{
+    background-color: rgb(150, 115, 247);
+    padding:26px 0px;
+    text-align:center; 
+}
+
+@media(max-width:800px){
+    main{
+    width:100%;
+    box-sizing:border-box;
+    }
+    section p{
+       margin:0px;
+    }
+    nav ul{
+        
+        flex-direction: column;
+        
+    }
+    
+   
+    
+   main section:nth-child(1) p,main section:nth-child(3) p{
+        width:95%;
+        margin:auto;
+        box-sizing:border-box;
+        float:none;
+    }
+    
+   }
